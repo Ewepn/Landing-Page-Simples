@@ -1,0 +1,119 @@
+:root {
+    --main-color: #1B2325;
+    --secondary-color: #EFF1F2;
+    --third-color: #7B8081;
+    --fourth-color: #2C4B5D;
+    --gap: 3rem; 
+}
+/*cores #EFF1F2 branco , #7B8081 cinza, #2C4B5D azul, #99A9B2 azul-acizentado, #1B2325 preto-acizentado */
+
+.main-bg {
+    background: var(--fourth-color);
+    background-size: cover;
+    background-position: center center;
+    color: var(--secondary-color);
+}
+
+.white-bg {
+    background: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.section-pg {
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--third-color);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu h1 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-family:'Ubuntu', sans-serif;
+    color: var(--main-color);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.3rem;
+    background: var(--fourth-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.space-menu {
+    height: 65px;
+}
+
+.one-content {
+    position: relative;
+    top: -6rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.one-text, .one-img {
+    justify-content: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.one-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.two-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
