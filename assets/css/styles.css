@@ -26,7 +26,7 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
 }
 
 .menu {
@@ -96,7 +96,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .one-text, .one-img {
@@ -111,9 +111,48 @@
 }
 
 .two-content {
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.three-content {
+    min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: counter-grid;
+}
+
+.top3-h2 {
     text-align: center;
+    padding-bottom: 5rem;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before {
+    counter-increment: counter-grid;
+    content: counter(counter-grid);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -4rem;
+    left: -1rem;
+    transform: rotate(5deg);
 }
