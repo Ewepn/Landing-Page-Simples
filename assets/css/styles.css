@@ -176,3 +176,17 @@
 .gallery-h2 {
     text-align: center;
 }
+
+.fiveth-content {
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
