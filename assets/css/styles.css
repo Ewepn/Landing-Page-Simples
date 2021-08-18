@@ -247,3 +247,17 @@
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.main-footer {
+    text-align: center;
+    font-style: italic;
+    padding: 3rem;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+.main-footer a {
+    color: orange;
+}
