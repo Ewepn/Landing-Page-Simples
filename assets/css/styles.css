@@ -243,6 +243,11 @@
     padding-bottom: 0;
 }
 
+.contact-img img {
+    max-width: 100%;
+    height: auto;
+}
+
 #contact h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -260,4 +265,18 @@
 
 .main-footer a {
     color: orange;
+}
+
+@media (max-width: 860px) {
+    .first-content, .grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .gallery-img img {
+        width: 100%;
+    }
 }
