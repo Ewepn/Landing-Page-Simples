@@ -13,13 +13,15 @@
 
 </head>
 <body class="main-bg">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#main">LOGO</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#main">Inicio</a></li>
                     <li><a href="#Linguagens">Linguagens</a></li>
                     <li><a href="#top3">Top 3</a></li>
@@ -178,5 +180,7 @@
     <footer id="footer" class="main-footer"> Projeto para estudos feito por: Ewerton Paz do Nascimento
         <p> svgs retiradas de: <a  rel="nofollow" target="_blank" href="https://unsplash.com">unsplash.com</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">TOP</a>
 </body>
 </html>
